@@ -33,5 +33,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/node_demo_ci_cd
-            ${{ secrets.DOCKERHUB_USERNAME }}/node_demo_ci_cd
+            ${{ secrets.DOCKERHUB_USERNAME }}/node_backend:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/node_backend:${{ github.run_number }}
